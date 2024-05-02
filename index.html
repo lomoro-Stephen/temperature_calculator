@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPERATURE CONVERTER</title>
+    <link rel="stylesheet" href="css/stlye.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <h1>Steph's Converter.app</h1>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="wrap">
+            <div class="about">
+                <h3>Welcome to Temperature Converter</h3>
+                <p> 
+                    Temperature Converter offers a precise and efficient solution for converting temperatures between Celsius and Fahrenheit scales. Our platform is designed to simplify temperature conversions, ensuring accuracy and reliability in every calculation.
+                </p>
+                <h3>Why Choose Temperature Converter?</h3>
+                <ul>
+                    <li>Precision: Our tool delivers precise temperature conversions, eliminating any margin for error.</li>
+                    <li>Ease of Use: With an intuitive interface, Temperature Converter makes the conversion process effortless.</li>
+                    <li>Accessibility: Whether you're at home, in the office, or on the go, Temperature Converter is accessible from any device with an internet connection. </li>
+                    <li>No Installation Required:Temperature Converter is a web-based tool, eliminating the need for installation and ensuring hassle-free access.</li>
+                </ul>
+                <h3>How It Works: </h3>
+                <p>
+                  Using Temperature Converter is straightforward. Input the temperature value into the designated field, select the unit of measurement (Celsius or Fahrenheit), and instantly receive the converted temperature in the alternative unit. Our streamlined process ensures efficiency and accuracy with every conversion.
+                </p>
+            </div>
+            <div class="form-wrap">
+                <div class="title-bx">
+                    <h2>Temperature Converter</h2>
+                </div>
+                <form action="#" class="form" id="tempConverterForm">
+                    <div class="inputs-fields">
+                        <div class="input-control">
+                            <label>Number</label>
+                            <input type="number" class="input" id="temperatureInput" placeholder="Enter Number" required>
+                            <div class="error-message" id="temperatureError"></div>
+                        </div>
+                        <div class="input-control">
+                            <label>Unit</label>
+                            <select id="unitSelect" required class="select">
+                                <option value="">Select unit</option>
+                                <option value="fahrenheit">Fahrenheit</option>
+                                <option value="celsius">Celsius</option>
+                            </select>
+                            <div class="error-message" id="unitError"></div>
+                        </div>
+                    </div>
+                    <p class="result">Result</p>
+                    <div class="screen" id="result"></div>
+                    <div class="input-control">
+                        <button type="submit" class="submit">Convert</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footerInfo">
+            <p>&copy; 2024  TempConverter. All rights reserved.</p>
+            <p>Designed by lomoro</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
